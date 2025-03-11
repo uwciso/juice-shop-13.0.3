@@ -1,4 +1,15 @@
-# ![Juice Shop Logo](https://raw.githubusercontent.com/juice-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_100px.png) OWASP Juice Shop
+# ![Juice Shop Logo](https://raw.githubusercontent.com/juice-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_100px.png) OWASP Juice Shop (UW CISO edition)
+
+Now that you've taken CISO's Web Application Security 101 course, you're ready to explore more of the Juice Shop and its many challenges. 
+
+There are many ways in which you can get your own version of Juice Shop up and running outlined below. But, probably the easiest (and safest) way to spin up an instance is to do so locally using Docker and CISO's own Docker image.
+
+1. Install [Docker](https://www.docker.com)
+2. Run `docker pull uwciso/juice-shop:v13.0.3`
+3. Run `docker run --rm -p 3000:3000 uwciso/juice-shop:v13.0.3`
+4. Browse to <http://localhost:3000>
+
+# All content below is from Juice Shop's developers, and not the UW CISO team
 
 [![OWASP Flagship](https://img.shields.io/badge/owasp-flagship%20project-48A646.svg)](https://owasp.org/projects/#sec-flagships)
 [![GitHub release](https://img.shields.io/github/release/juice-shop/juice-shop.svg)](https://github.com/juice-shop/juice-shop/releases/latest)
