@@ -36,7 +36,7 @@ export const ScoreBoardInstruction: ChallengeInstruction = {
       text: atob('TG9vayB0aHJvdWdoIHRoZSBjbGllbnQtc2lkZSBKYXZhU2NyaXB0IGluIHRoZSBfU291cmNlc18gdGFiIGZvciBjbHVlcy4gT3IganVzdCBzdGFydCBVUkwgZ3Vlc3NpbmcuIEl0J3MgdXAgdG8geW91IQ=='),
       fixture: atob('YXBwLW5hdmJhcg=='),
       unskippable: true,
-      resolved: waitForAngularRouteToBeVisited(atob("c2NvcmUtYm9hcmQ="))
+      resolved: waitForAngularRouteToBeVisited(atob('c2NvcmUtYm9hcmQ='))
     },
     {
       text: '🎉' + atob('8J+OiSBDb25ncmF0dWxhdGlvbnMhIFlvdSBmb3VuZCB0aGUgX1Njb3JlIEJvYXJkXyEgR29vZCBsdWNrIGFuZCBoYXBweSBoYWNraW5nIQ=='),

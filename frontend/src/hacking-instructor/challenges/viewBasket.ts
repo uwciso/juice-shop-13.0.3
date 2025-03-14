@@ -79,7 +79,7 @@ export const ViewBasketInstruction: ChallengeInstruction = {
       }
     },
     {
-      text: "🎉 " + atob('8J+OiSBDb25ncmF0dWxhdGlvbnMhIFlvdSBhcmUgbm93IHZpZXdpbmcgYW5vdGhlciB1c2VyJ3Mgc2hvcHBpbmcgYmFza2V0IQ=='),
+      text: '🎉 ' + atob('8J+OiSBDb25ncmF0dWxhdGlvbnMhIFlvdSBhcmUgbm93IHZpZXdpbmcgYW5vdGhlciB1c2VyJ3Mgc2hvcHBpbmcgYmFza2V0IQ=='),
       fixture: atob('YXBwLWJhc2tldA=='),
       resolved: waitInMs(15000)
     }

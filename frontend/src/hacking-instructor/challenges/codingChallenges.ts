@@ -16,7 +16,7 @@ export const CodingChallengesInstruction: ChallengeInstruction = {
       fixture: atob('YXBwLW5hdmJhcg=='),
       fixtureAfter: true,
       unskippable: true,
-      resolved: waitForAngularRouteToBeVisited(atob("c2NvcmUtYm9hcmQ=")) // FIXME The tutorial does not progress automatically. Workaround ^^^^^^^^^^^^^^^^ instruction above should be removed when fixed.
+      resolved: waitForAngularRouteToBeVisited(atob('c2NvcmUtYm9hcmQ=')) // FIXME The tutorial does not progress automatically. Workaround ^^^^^^^^^^^^^^^^ instruction above should be removed when fixed.
     },
     {
       text: atob('TWFueSBKdWljZSBTaG9wIGhhY2tpbmcgY2hhbGxlbmdlcyBjb21lIHdpdGggYW4gYXNzb2NpYXRlZCBfQ29kaW5nIENoYWxsZW5nZV8gd2hpY2ggd2lsbCB0ZWFjaCB5b3UgbW9yZSBhYm91dCB0aGUgdW5kZXJseWluZyB2dWxuZXJhYmlsaXR5IG9uIHNvdXJjZSBjb2RlIGxldmVsLg=='),
