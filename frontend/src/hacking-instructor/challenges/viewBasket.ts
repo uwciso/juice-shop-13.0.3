@@ -10,50 +10,43 @@ import {
 import { type ChallengeInstruction } from '../'
 
 export const ViewBasketInstruction: ChallengeInstruction = {
-  name: 'View Basket',
+  name: atob('VmlldyBCYXNrZXQ='),
   hints: [
     {
-      text:
-          "This challenge is about **Horizontal Privilege Escalation**, meaning you are supposed to access data that does not belong to your own account but to another user's.",
-      fixture: 'app-navbar',
+      text: atob('VGhpcyBjaGFsbGVuZ2UgaXMgYWJvdXQgKipIb3Jpem9udGFsIFByaXZpbGVnZSBFc2NhbGF0aW9uKiosIG1lYW5pbmcgeW91IGFyZSBzdXBwb3NlZCB0byBhY2Nlc3MgZGF0YSB0aGF0IGRvZXMgbm90IGJlbG9uZyB0byB5b3VyIG93biBhY2NvdW50IGJ1dCB0byBhbm90aGVyIHVzZXIncy4='),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       resolved: waitInMs(18000)
     },
     {
-      text:
-          "To start this challenge, you'll have to log in first.",
-      fixture: 'app-navbar',
+      text: atob('VG8gc3RhcnQgdGhpcyBjaGFsbGVuZ2UsIHlvdSdsbCBoYXZlIHRvIGxvZyBpbiBmaXJzdC4='),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       unskippable: true,
       resolved: waitForLogIn()
     },
     {
-      text:
-          "First, go to the _Your Basket_ page to view your own shopping basket. It's likely to be empty, if you didn't add anything yet.",
-      fixture: 'app-navbar',
+      text: atob('Rmlyc3QsIGdvIHRvIHRoZSBfWW91ciBCYXNrZXRfIHBhZ2UgdG8gdmlldyB5b3VyIG93biBzaG9wcGluZyBiYXNrZXQuIEl0J3MgbGlrZWx5IHRvIGJlIGVtcHR5LCBpZiB5b3UgZGlkbid0IGFkZCBhbnl0aGluZyB5ZXQu'),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       unskippable: true,
       resolved: waitForAngularRouteToBeVisited('basket')
     },
     {
-      text:
-          "To pass this challenge, you will need to peek into another user's basket while remaining logged in with your own account.",
-      fixture: 'app-navbar',
+      text: atob('VG8gcGFzcyB0aGlzIGNoYWxsZW5nZSwgeW91IHdpbGwgbmVlZCB0byBwZWVrIGludG8gYW5vdGhlciB1c2VyJ3MgYmFza2V0IHdoaWxlIHJlbWFpbmluZyBsb2dnZWQgaW4gd2l0aCB5b3VyIG93biBhY2NvdW50Lg=='),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       resolved: waitInMs(8000)
     },
     {
-      text:
-          'If the application stores a reference to the basket somewhere in the browser, that might be a possible attack vector.',
-      fixture: 'app-navbar',
+      text: atob('SWYgdGhlIGFwcGxpY2F0aW9uIHN0b3JlcyBhIHJlZmVyZW5jZSB0byB0aGUgYmFza2V0IHNvbWV3aGVyZSBpbiB0aGUgYnJvd3NlciwgdGhhdCBtaWdodCBiZSBhIHBvc3NpYmxlIGF0dGFjayB2ZWN0b3Iu'),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       resolved: waitInMs(12000)
     },
     {
-      text:
-          "Open the browser's _Development Tools_ and locate the _Session Storage_ tab. Similar to 🍪s, it can be used to store data in key/value pairs for each website.",
-      fixture: 'app-navbar',
+      text: atob('T3BlbiB0aGUgYnJvd3NlcidzIF9EZXZlbG9wbWVudCBUb29sc18gYW5kIGxvY2F0ZSB0aGUgX1Nlc3Npb24gU3RvcmFnZV8gdGFiLiBTaW1pbGFyIHRvIGNvb2tpZXMsIGl0IGNhbiBiZSB1c2VkIHRvIHN0b3JlIGRhdGEgaW4ga2V5L3ZhbHVlIHBhaXJzIGZvciBlYWNoIHdlYnNpdGUu'),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       resolved: waitForDevTools()
     },
     {
-      text:
-          'Look over the names of the used session keys. Do you see something that might be related to the shopping basket? Try setting it to a different value! ✍️',
-      fixture: 'app-navbar',
+      text: atob('TG9vayBvdmVyIHRoZSBuYW1lcyBvZiB0aGUgdXNlZCBzZXNzaW9uIGtleXMuIERvIHlvdSBzZWUgc29tZXRoaW5nIHRoYXQgbWlnaHQgYmUgcmVsYXRlZCB0byB0aGUgc2hvcHBpbmcgYmFza2V0PyBUcnkgc2V0dGluZyBpdCB0byBhIGRpZmZlcmVudCB2YWx1ZSE='),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       unskippable: true,
       async resolved () {
         const bid = sessionStorage.getItem('bid')
@@ -66,15 +59,13 @@ export const ViewBasketInstruction: ChallengeInstruction = {
       }
     },
     {
-      text:
-        'Great, you have changed the `bid` value which might be some ID for the shopping basket!',
-      fixture: 'app-navbar',
+      text: atob('R3JlYXQsIHlvdSBoYXZlIGNoYW5nZWQgdGhlIGBiaWRgIHZhbHVlIHdoaWNoIG1pZ2h0IGJlIHNvbWUgSUQgZm9yIHRoZSBzaG9wcGluZyBiYXNrZXQh'),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       resolved: waitInMs(8000)
     },
     {
-      text:
-          'Now, go to any other screen and then back to _Your Basket_. If nothing happens you might have set an invalid or non-existing `bid`. Try another in that case.',
-      fixture: 'app-navbar',
+      text: atob('Tm93LCBnbyB0byBhbnkgb3RoZXIgc2NyZWVuIGFuZCB0aGVuIGJhY2sgdG8gX1lvdXIgQmFza2V0Xy4gSWYgbm90aGluZyBoYXBwZW5zIHlvdSBtaWdodCBoYXZlIHNldCBhbiBpbnZhbGlkIG9yIG5vbi1leGlzdGluZyBgYmlkYC4gVHJ5IGFub3RoZXIgaW4gdGhhdCBjYXNlLg=='),
+      fixture: atob('YXBwLW5hdmJhcg=='),
       fixtureAfter: true,
       unskippable: true,
       async resolved () {
@@ -88,9 +79,8 @@ export const ViewBasketInstruction: ChallengeInstruction = {
       }
     },
     {
-      text:
-          "🎉 Congratulations! You are now viewing another user's shopping basket!",
-      fixture: 'app-basket',
+      text: "🎉 " + atob('8J+OiSBDb25ncmF0dWxhdGlvbnMhIFlvdSBhcmUgbm93IHZpZXdpbmcgYW5vdGhlciB1c2VyJ3Mgc2hvcHBpbmcgYmFza2V0IQ=='),
+      fixture: atob('YXBwLWJhc2tldA=='),
       resolved: waitInMs(15000)
     }
   ]

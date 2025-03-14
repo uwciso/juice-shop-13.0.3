@@ -1,0 +1,13 @@
+application:
+  showGitHubLinks: false
+  social:
+    questionnaireUrl: null
+  welcomeBanner:
+    showOnFirstStart: false
+challenges:
+  showSolvedNotifications: true
+  showHints: true
+  showFeedbackButtons: false
+  safetyMode: disabled
+hackingInstructor:
+  isEnabled: true 
